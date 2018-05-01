@@ -22,7 +22,7 @@ These scripts add users to (or remove them from) a New Relic account based on a 
 
     - `accountId`: The New Relic account ID to which you wish to add users
     - `login_service_tokens`: Your auth tokens, copied from a browser in which you have logged into your account. (In Google Chrome, you may obtain these tokens by visiting `chrome://settings/cookies/detail?site=newrelic.com` and copying the value of the `login_service_login_newrelic_com_tokens` cookie.)
-    - `inputFile`: Path to CSV file containing email addresses to add
+    - `inputFile`: Path to CSV file containing usernames, email addresses, and subaccounts to add
     - _Optional_: This script adds users as `admin`. To add them as a different user type (`user` or `restricted`), change the value of the `userLevel` variable.
 
 3. To run the script, open a Terminal window and execute `node addUsers.js`.
